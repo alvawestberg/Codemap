@@ -1,60 +1,362 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>CodeMap</title>
+
+    <!-- Kopplar HTML till CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+<link rel="stylesheet" href="style.css"
 
 <body>
 
+    <!-- =========================
+         MENY
+    ========================== -->
+
     <header>
-        <h1>CodeMap</h1>
 
         <nav>
-            <a href="index.html">Hem</a>
-            <a href="programmeringssprak.html">Programmeringsspråk</a>
-            <a href="om.html">Om</a>
-            <a href="quiz.html">Quiz</a>
+
+            <div class="logo">
+                Code<span>Map</span>
+            </div>
+
+            <ul class="menu">
+
+                <li>
+                    <a href="#" class="active">Hem</a>
+                </li>
+
+                <li>
+                    <a href="#">Om</a>
+                </li>
+
+                <li>
+                    <a href="#">Programmeringsspråk</a>
+                </li>
+
+                <li>
+                    <a href="#">Quiz / Testa dig själv</a>
+                </li>
+
+                <li>
+                    <a href="#">Kontakt</a>
+                </li>
+
+            </ul>
+
         </nav>
+
     </header>
 
+
+    <!-- =========================
+         FRAMSIDA
+    ========================== -->
+
     <main>
-        <section>
-            <h2>Välkommen till CodeMap!</h2>
 
-            <p>
-                CodeMap är en webbplats som hjälper nybörjare
-                att förstå olika programmeringsspråk och vad de används till.
+        <section class="hero">
+
+            <div class="hero-text">
+
+                <p class="small-title">
+                    VÄLKOMMEN TILL CODEMAP
+                </p>
+
+                <h1>
+                    Börja din resa inom
+                    <span>programmering.</span>
+                </h1>
+
+                <p class="description">
+                    CodeMap är en nybörjarvänlig webbplats
+                    där du kan lära dig grunderna inom
+                    programmering och upptäcka olika
+                    programmeringsspråk.
+                </p>
+
+                <a href="#" class="button">
+                    Börja lära dig
+                </a>
+
+            </div>
+
+
+            <div class="code-box">
+
+                <div class="code-header">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+                <div class="code">
+
+                    <p>
+                        <span class="number">1</span>
+                        <span class="purple">print</span>
+                        <span>(</span>
+                        <span class="green">"Hello World!"</span>
+                        <span>)</span>
+                    </p>
+
+                    <p>
+                        <span class="number">2</span>
+                    </p>
+
+                    <p>
+                        <span class="number">3</span>
+                        <span class="comment">
+                            # Börja lära dig programmering
+                        </span>
+                    </p>
+
+                    <p>
+                        <span class="number">4</span>
+                        <span class="purple">start</span>
+                        <span> = </span>
+                        <span class="green">True</span>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             OM CODEMAP
+        ========================== -->
+
+        <section class="about">
+
+            <p class="small-title">
+                OM CODEMAP
             </p>
-        </section>
 
-        <section>
-            <h2>Varför programmering?</h2>
+            <h2>
+                Programmering behöver inte
+                vara <span>svårt.</span>
+            </h2>
 
-            <p>
-                Programmering används inom många olika områden,
-                till exempel webbutveckling, spel, appar och teknik.
-                På CodeMap kan du lära dig mer om olika språk
-                och deras användningsområden.
+            <p class="about-text">
+                Att börja programmera kan kännas svårt i början.
+                Därför skapades CodeMap för att göra det enklare
+                att förstå grunderna och hitta rätt programmeringsspråk
+                att börja med.
             </p>
+
         </section>
 
-        <section>
-            <h2>Vad kan du hitta här?</h2>
 
-            <ul>
-                <li>Lära dig om olika programmeringsspråk</li>
-                <li>Se vad olika språk används till</li>
-                <li>Testa dina kunskaper med ett quiz</li>
-            </ul>
+        <!-- =========================
+             PROGRAMMERINGSSPRÅK
+        ========================== -->
+
+        <section class="languages">
+
+            <div class="section-title">
+
+                <div>
+
+                    <p class="small-title">
+                        UTFORSKA
+                    </p>
+
+                    <h2>
+                        Programmeringsspråk
+                    </h2>
+
+                </div>
+
+                <p>
+                    Lär dig mer om några av de vanligaste
+                    programmeringsspråken.
+                </p>
+
+            </div>
+
+
+            <div class="language-container">
+
+
+                <!-- HTML -->
+
+                <div class="language-card">
+
+                    <div class="language-icon">
+                        &lt;/&gt;
+                    </div>
+
+                    <h3>HTML</h3>
+
+                    <p>
+                        HTML används för att skapa
+                        strukturen på webbsidor.
+                    </p>
+
+                    <a href="#">
+                        Läs mer →
+                    </a>
+
+                </div>
+
+
+                <!-- CSS -->
+
+                <div class="language-card">
+
+                    <div class="language-icon">
+                        #
+                    </div>
+
+                    <h3>CSS</h3>
+
+                    <p>
+                        CSS används för att skapa design,
+                        färger och layout på webbsidor.
+                    </p>
+
+                    <a href="#">
+                        Läs mer →
+                    </a>
+
+                </div>
+
+
+                <!-- JAVASCRIPT -->
+
+                <div class="language-card">
+
+                    <div class="language-icon">
+                        JS
+                    </div>
+
+                    <h3>JavaScript</h3>
+
+                    <p>
+                        JavaScript används för att göra
+                        webbsidor interaktiva.
+                    </p>
+
+                    <a href="#">
+                        Läs mer →
+                    </a>
+
+                </div>
+
+
+                <!-- PYTHON -->
+
+                <div class="language-card">
+
+                    <div class="language-icon">
+                        Py
+                    </div>
+
+                    <h3>Python</h3>
+
+                    <p>
+                        Python är ett populärt språk som
+                        är enkelt att börja lära sig.
+                    </p>
+
+                    <a href="#">
+                        Läs mer →
+                    </a>
+
+                </div>
+
+
+            </div>
+
         </section>
+
+
+        <!-- =========================
+             QUIZ
+        ========================== -->
+
+        <section class="quiz">
+
+            <div>
+
+                <p class="small-title">
+                    TESTA DIG SJÄLV
+                </p>
+
+                <h2>
+                    Hur mycket kan
+                    <span>du?</span>
+                </h2>
+
+                <p>
+                    När du har lärt dig grunderna kan du
+                    testa dina kunskaper med vårt quiz.
+                </p>
+
+                <a href="#" class="button">
+                    Starta quiz
+                </a>
+
+            </div>
+
+        </section>
+
     </main>
 
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
     <footer>
-        <p>CodeMap</p>
+
+        <div class="footer-content">
+
+            <div>
+
+                <div class="logo">
+                    Code<span>Map</span>
+                </div>
+
+                <p>
+                    Din guide till programmering.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#">Hem</a>
+                <a href="#">Om</a>
+                <a href="#">Kontakt</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 CodeMap – Universitetsprojekt
+
+        </div>
+
     </footer>
 
+
 </body>
+
 </html>
