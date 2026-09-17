@@ -1,0 +1,532 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #ffffff;
+
+    color: #151515;
+}
+
+
+/* =================================
+   MENY
+================================= */
+
+header {
+    background-color: #0b0b0d;
+
+    padding: 22px 60px;
+
+    border-bottom: 1px solid #252329;
+}
+
+nav {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+/* LOGGA */
+
+.logo {
+    color: white;
+
+    font-size: 25px;
+
+    font-weight: bold;
+}
+
+.logo span {
+    color: #9b5cff;
+}
+
+
+/* MENY-LÄNKAR */
+
+.menu {
+    list-style: none;
+
+    display: flex;
+
+    gap: 30px;
+}
+
+.menu a {
+    color: #bdb9c5;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+.menu a:hover {
+    color: white;
+}
+
+.menu a.active {
+    color: #9b5cff;
+}
+
+
+/* =================================
+   HERO / FRAMSIDA
+================================= */
+
+.hero {
+    background-color: #0b0b0d;
+
+    color: white;
+
+    min-height: 600px;
+
+    padding: 100px 60px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 80px;
+}
+
+.hero-text {
+    max-width: 600px;
+
+    margin-left: calc((100% - 1200px) / 2);
+}
+
+
+/* LITEN RUBRIK */
+
+.small-title {
+    color: #9b5cff;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 20px;
+}
+
+
+/* HUVUDRUBRIK */
+
+.hero h1 {
+    font-size: 58px;
+
+    line-height: 1.1;
+
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #9b5cff;
+}
+
+
+/* BESKRIVNING */
+
+.description {
+    color: #aaa7b0;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    max-width: 550px;
+
+    margin-bottom: 30px;
+}
+
+
+/* KNAPP */
+
+.button {
+    display: inline-block;
+
+    background-color: #8b4de8;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 14px 25px;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+.button:hover {
+    background-color: #7137c5;
+}
+
+
+/* =================================
+   CODE-RUTA
+================================= */
+
+.code-box {
+    width: 480px;
+
+    background-color: #141318;
+
+    border: 1px solid #302c38;
+
+    border-radius: 10px;
+
+    margin-right: calc((100% - 1200px) / 2);
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+
+/* ÖVRE DELEN AV KODRUTAN */
+
+.code-header {
+    height: 45px;
+
+    border-bottom: 1px solid #2b2731;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding-left: 18px;
+}
+
+.code-header span {
+    width: 10px;
+
+    height: 10px;
+
+    border-radius: 50%;
+
+    background-color: #555;
+}
+
+
+/* KOD */
+
+.code {
+    padding: 30px;
+
+    font-family: "Courier New", monospace;
+
+    font-size: 14px;
+
+    line-height: 2;
+}
+
+.code p {
+    color: white;
+}
+
+.number {
+    color: #55515e;
+
+    display: inline-block;
+
+    width: 30px;
+}
+
+.purple {
+    color: #b57cff;
+}
+
+.green {
+    color: #8bd17c;
+}
+
+.comment {
+    color: #65616c;
+}
+
+
+/* =================================
+   OM CODEMAP
+================================= */
+
+.about {
+    text-align: center;
+
+    padding: 90px 30px;
+}
+
+.about h2 {
+    font-size: 40px;
+
+    margin-bottom: 20px;
+}
+
+.about h2 span {
+    color: #8b4de8;
+}
+
+.about-text {
+    max-width: 700px;
+
+    margin: auto;
+
+    color: #666;
+
+    line-height: 1.8;
+
+    font-size: 16px;
+}
+
+
+/* =================================
+   PROGRAMMERINGSSPRÅK
+================================= */
+
+.languages {
+    background-color: #f6f3fa;
+
+    padding: 90px 60px;
+}
+
+
+/* RUBRIK */
+
+.section-title {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: end;
+
+    margin-bottom: 45px;
+}
+
+.section-title h2 {
+    font-size: 38px;
+}
+
+.section-title > p {
+    color: #666;
+
+    max-width: 400px;
+
+    line-height: 1.6;
+}
+
+
+/* KORT */
+
+.language-container {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.language-card {
+    background-color: white;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    padding: 30px;
+
+    transition: 0.2s;
+}
+
+.language-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #a97bea;
+
+    box-shadow: 0 10px 30px rgba(80, 40, 120, 0.1);
+}
+
+
+/* IKON */
+
+.language-icon {
+    width: 48px;
+
+    height: 48px;
+
+    background-color: #eee5fb;
+
+    color: #7d3fd1;
+
+    border-radius: 8px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-weight: bold;
+
+    margin-bottom: 25px;
+}
+
+
+/* KORT RUBRIK */
+
+.language-card h3 {
+    font-size: 22px;
+
+    margin-bottom: 12px;
+}
+
+
+/* KORT TEXT */
+
+.language-card p {
+    color: #666;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    min-height: 95px;
+
+    margin-bottom: 20px;
+}
+
+
+/* LÄS MER */
+
+.language-card a {
+    color: #7d3fd1;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+/* =================================
+   QUIZ
+================================= */
+
+.quiz {
+    padding: 100px 30px;
+
+    text-align: center;
+
+    background-color: white;
+}
+
+.quiz h2 {
+    font-size: 40px;
+
+    margin-bottom: 20px;
+}
+
+.quiz h2 span {
+    color: #8b4de8;
+}
+
+.quiz p:not(.small-title) {
+    color: #666;
+
+    margin-bottom: 30px;
+}
+
+
+/* =================================
+   FOOTER
+================================= */
+
+footer {
+    background-color: #0b0b0d;
+
+    color: white;
+
+    padding: 50px 60px 25px;
+}
+
+.footer-content {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding-bottom: 35px;
+}
+
+.footer-content p {
+    color: #777;
+
+    font-size: 13px;
+
+    margin-top: 10px;
+}
+
+.footer-links {
+    display: flex;
+
+    gap: 25px;
+}
+
+.footer-links a {
+    color: #999;
+
+    text-decoration: none;
+
+    font-size: 13px;
+}
+
+.footer-links a:hover {
+    color: #9b5cff;
+}
+
+.copyright {
+    max-width: 1200px;
+
+    margin: auto;
+
+    border-top: 1px solid #29262e;
+
+    padding-top: 20px;
+
+    color: #555;
+
+    font-size: 12px;
+}
