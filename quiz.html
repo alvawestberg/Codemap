@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Quiz | CodeMap</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <nav>
+
+            <div class="logo">
+                Code<span>Map</span>
+            </div>
+
+            <ul class="menu">
+
+                <li>
+                    <a href="index.html">Hem</a>
+                </li>
+
+               
+
+                <li>
+                    <a href="programmeringssprak.html">
+                        Programmeringsspråk
+                    </a>
+                </li>
+
+                <li>
+                    <a href="quiz.html" class="active">
+                        Quiz / Testa dig själv
+                    </a>
+                </li>
+
+               
+                </li>
+
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- INTRO -->
+    <main>
+
+        <section class="quiz-intro">
+
+            <p class="small-title">
+                TESTA DIG SJÄLV
+            </p>
+
+            <h1>
+                Testa dina <span>kunskaper.</span>
+            </h1>
+
+            <p class="quiz-intro-text">
+                Hur mycket har du lärt dig om programmering?
+                Testa dina kunskaper inom HTML, CSS, JavaScript
+                och Python.
+            </p>
+
+        </section>
+
+
+        <!-- QUIZ -->
+        <section class="quiz-page">
+
+            <div class="quiz-container">
+
+                <div class="quiz-top">
+
+                    <p class="quiz-number">
+                        Fråga
+                        <span id="current-question">1</span>
+                        av 10
+                    </p>
+
+                    <p class="quiz-score">
+                        Poäng:
+                        <span id="score">0</span>
+                    </p>
+
+                </div>
+
+
+                <!-- PROGRESS BAR -->
+                <div class="progress-bar">
+                    <div class="progress" id="progress"></div>
+                </div>
+
+
+                <!-- FRÅGA -->
+                <div class="question-box">
+
+                    <p class="question-category" id="category">
+                        HTML
+                    </p>
+
+                    <h2 id="question">
+                        Vad används HTML främst till?
+                    </h2>
+
+
+                    <!-- SVAR -->
+                    <div class="answers">
+
+                        <button class="answer-button">
+                            Skapa strukturen på en webbsida
+                        </button>
+
+                        <button class="answer-button">
+                            Ändra färger på en webbsida
+                        </button>
+
+                        <button class="answer-button">
+                            Skapa databaser
+                        </button>
+
+                        <button class="answer-button">
+                            Redigera bilder
+                        </button>
+
+                    </div>
+
+
+                    <p id="feedback" class="feedback"></p>
+
+
+                    <button id="next-button" class="quiz-next">
+                        Nästa fråga →
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+
+                <div class="logo">
+                    Code<span>Map</span>
+                </div>
+
+                <p>
+                    Din guide till programmering.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="index.html">
+                    Hem
+                </a>
+
+                <a href="index.html#om">
+                    Om
+                </a>
+
+                <a href="#kontakt">
+                    Kontakt
+                </a>
+
+            </div>
+
+
+            <div class="footer-contact" id="kontakt">
+
+                <div class="contact-title">
+                    Kontakt
+                </div>
+
+                <a href="mailto:kontakt@codemap.se">
+                    kontakt@codemap.se
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+            © 2026 CodeMap
+        </div>
+
+    </footer>
+
+
+    <script src="quiz.js"></script>
+
+</body>
+</html>
