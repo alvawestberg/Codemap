@@ -297,6 +297,129 @@ nav {
 
     font-size: 16px;
 }
+.abstract-hero {
+    padding: 110px 24px 100px;
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        #ffffff,
+        #f8f4ff
+    );
+}
+
+.abstract-hero .section-content {
+    max-width: 850px;
+}
+
+.abstract-hero h1 {
+    margin: 20px 0;
+    color: #17121f;
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    line-height: 1.05;
+    letter-spacing: -2px;
+}
+
+.abstract-hero p:not(.section-subtitle) {
+    max-width: 680px;
+    margin: 0 auto;
+    color: #66616f;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.abstract-overview {
+    padding: 100px 24px;
+    background-color: #ffffff;
+}
+
+.abstract-overview h2 {
+    margin: 18px 0 25px;
+    color: #17121f;
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.abstract-intro {
+    max-width: 750px;
+    margin-bottom: 45px;
+    color: #66616f;
+    line-height: 1.8;
+}
+
+.abstract-page-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.abstract-page-card {
+    display: block;
+    padding: 35px;
+    border: 1px solid #e9e3f3;
+    border-radius: 24px;
+    background-color: #ffffff;
+    color: inherit;
+    text-decoration: none;
+    box-shadow: 0 10px 35px rgba(40, 20, 70, 0.04);
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.abstract-page-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 40px rgba(40, 20, 70, 0.1);
+}
+
+.abstract-page-card span {
+    display: block;
+    margin-bottom: 25px;
+    color: #8b5cf6;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.abstract-page-card h3 {
+    margin-bottom: 15px;
+    color: #17121f;
+    font-size: 1.6rem;
+}
+
+.abstract-page-card p {
+    min-height: 85px;
+    margin-bottom: 25px;
+    color: #66616f;
+    line-height: 1.8;
+}
+
+.abstract-page-card strong {
+    color: #8b5cf6;
+}
+
+.abstract-summary {
+    padding: 100px 24px;
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        #f8f4ff,
+        #ffffff
+    );
+}
+
+.abstract-summary .section-content {
+    max-width: 850px;
+}
+
+.abstract-summary h2 {
+    margin: 18px 0;
+    color: #17121f;
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.abstract-summary p:not(.section-subtitle) {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: #66616f;
+    line-height: 1.8;
+}
 
 
 /* =================================
@@ -867,4 +990,78 @@ footer {
         font-size: 34px;
     }
 
+}
+/* Responsiv design */
+@media (max-width: 700px) {
+
+    .abstract-hero,
+    .abstract-overview,
+    .abstract-summary {
+        padding: 70px 20px;
+    }
+
+    .abstract-page-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .abstract-page-card {
+        padding: 28px;
+    }
+
+    .abstract-page-card p {
+        min-height: auto;
+    }
+
+}
+
+.abstract-overview {
+    padding: 100px 24px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.abstract-overview .section-content {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.abstract-overview p {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Centrera hela idéabstract-sidan */
+
+.abstract-hero,
+.abstract-overview,
+.abstract-summary {
+    text-align: center;
+}
+
+/* Centrera innehållets bredd */
+.abstract-hero .section-content,
+.abstract-overview .section-content,
+.abstract-summary .section-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+/* Centrera korten på sidan */
+.abstract-page-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Centrera texten i korten */
+.abstract-page-card {
+    text-align: center;
+}
+
+/* Centrera knappar */
+.abstract-overview .button,
+.abstract-summary .button {
+    display: block;
+    width: fit-content;
+    margin: 30px auto 0;
 }
